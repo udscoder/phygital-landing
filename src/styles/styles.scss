@@ -1,0 +1,94 @@
+@import "./content/introduction/introduction";
+@import "./content/project/project";
+@import "./content/games/games";
+@import "./content/androids/androids";
+@import "./content/forms/forms";
+
+@import "./header/header";
+
+@import "./responsive";
+
+@font-face {
+    font-family: "FGTL";
+    src: url("../fonts/FGTL.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.forms {
+    background: black;
+}
+
+.background {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+
+.btn{
+    font-family: FGTL, sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 50px;
+    background: linear-gradient(90deg, #467FFF 0%, #A414FF 100.93%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: FGTL, sans-serif;
+}
+
+.desc {
+    opacity: .7;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    height: 49px;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #191919;
+    border: none;
+}
+
+.form-block {
+    padding: 1px;
+    background: linear-gradient(to right, #467FFF, #A414FF)
+}
+
+.form-group {
+    border: none;
+    width: 100%;
+    input {
+        color: #ffffff;
+    }
+}
+
+.forms-btn {
+    width: 100%;
+    margin-top: 30px;
+}

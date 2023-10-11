@@ -1,0 +1,25 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 125px 42px;
+    background-color: #000;
+    color: #ffffff;
+    gap: 60px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-desc {
+            width: 500px;
+            height: 330px;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 46px;
+    }
+}

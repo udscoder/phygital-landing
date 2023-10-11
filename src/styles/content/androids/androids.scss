@@ -1,0 +1,42 @@
+.androids {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    &__content {
+        padding: 50px 0 500px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(180deg, rgba(164, 20, 255, 0.00) 0%, rgba(164, 20, 255, 0.17) 14.06%, rgba(164, 20, 255, 0.12) 85.94%, rgba(164, 20, 255, 0.00) 100%);
+    }
+
+    &__image {
+        background: none;
+        &-bottom {
+            margin-top: -300px;
+        }
+    }
+    //&__content {
+    //    display: flex;
+    //    flex-direction: column;
+    //    align-items: center;
+    //    justify-content: center;
+    //    width: 100%;
+    //    padding-bottom: 600px;
+    //    z-index: 10;
+    //    padding-top: 80px;
+    //}
+    //
+    //&__bottom-content {
+    //    margin-top: -300px;
+    //    display: flex;
+    //    flex-direction: column;
+    //    align-items: center;
+    //    justify-content: center;
+    //    z-index: 2
+    //}
+}
