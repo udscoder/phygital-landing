@@ -5,7 +5,7 @@ export const AndroidsMobile = () => {
     return (
         <div className={'androids'}>
             <div className='androids__content'>
-                <img src="/images/android-mobile-1.png" alt="" />
+                <img src="/images/androids-mobile-1.png" alt="" />
             </div>
 
             <h1 className={'androids__title'}>возможности </h1>

@@ -22,6 +22,11 @@
 }
 
 @media screen and (max-width: 1230px) {
+    .introduction {
+        &__content {
+            top: 60%;
+        }
+    }
     .header {
         padding: 18px 50px;
     }
@@ -41,12 +46,17 @@
             margin-bottom: 20px;
         }
     }
+
+    .forms__block {
+        margin-top: 370px;
+    }
 }
 
 @media screen and (max-width: 930px){
     .introduction {
 
         &__content {
+            top: 53%;
             padding-left: 50px;
         }
 
@@ -108,5 +118,9 @@
         &__title {
             font-size: 26px;
         }
+    }
+
+    .forms__block {
+        margin-top: 400px;
     }
 }
