@@ -21,7 +21,7 @@ export const Forms = () => {
             key: 'telegram',
             value: '',
             setValue: '',
-            placeholder: 'email',
+            placeholder: 'email phonefdsfdsfds',
             imgLeft: '/icons/icon_telegram.png'
         }
     ])
