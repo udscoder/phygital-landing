@@ -6,7 +6,7 @@ export const Project = () => {
         <div className='project'>
             <img
                 className='project__img'
-                src="/images/project__left.png"
+                src="/images/project_left.png"
                 alt=""
             />
 

@@ -5,6 +5,12 @@
     justify-content: center;
     padding: 125px 42px 0 42px;
     background-color: #000;
+    &__image {
+        width: 1052px;
+        &-bottom {
+            width: 1281px;
+        }
+    }
 }
 
 .games-mobile {
