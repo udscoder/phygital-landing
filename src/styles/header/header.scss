@@ -1,7 +1,6 @@
 .header {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.58);
     backdrop-filter: blur(18px);
     padding: 18px 125px;
     color: #ffffff;
@@ -20,6 +19,9 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        p {
+            cursor: pointer;
+        }
     }
 
     &__logo {
@@ -38,5 +40,26 @@
         width: 15px;
         height: 2px;
         background: #ffffff;
+    }
+
+    &__close {
+        position: relative;
+        margin-right: 20px;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: #ffffff;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: #ffffff;
+        }
     }
 }

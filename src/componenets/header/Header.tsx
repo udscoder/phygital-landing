@@ -1,22 +1,85 @@
-import { FC, useRef } from "react";
+import { FC, useEffect, useRef, useState } from "react";
+import { scrollTo } from "../../utils";
 import { Button } from "../../form/Button";
 
-export const Header = () => {
-    const windowWidth: any = useRef(window.innerWidth);
-    const titles = [ 'О нас', 'О нас', 'Выгода', 'По приколу', 'О нас' ]
+interface HeaderProps {
+    setMenuClass?: any,
+    isMenuClicked?: any,
+    setIsMenuClicked?: any
+}
 
-    const renderedTitles = titles.map((item: any) => {
-        return <p className='img header__titles-title'>{ item }</p>
+export const Header: FC<HeaderProps> = ({
+    setMenuClass,
+    isMenuClicked,
+    setIsMenuClicked
+}) => {
+    const windowWidth: any = useRef(window.innerWidth);
+    const titles = [ 'О нас', 'Игри', 'Андроиди', 'Формы', ]
+
+    const updateMenu = () => {
+        if (!isMenuClicked) {
+            setMenuClass('menu visible')
+        } else {
+            setMenuClass('menu hidden')
+        }
+
+        setIsMenuClicked(!isMenuClicked)
+    }
+
+    // useEffect(() => {
+    //     const bodyOverflow = document.body.style.overflow;
+    //
+    //     if (isMenuClicked) {
+    //         document.body.style.overflow = 'hidden'
+    //     }
+    //
+    //     return () => {
+    //         document.body.style.overflow = bodyOverflow;
+    //     }
+    // }, [ isMenuClicked ])
+
+    const renderedTitles = titles.map((item: any, index: number) => {
+        const handleClick = () => {
+            if (index === 0)
+                scrollTo("about_us", 'center')
+
+            if (index === 1)
+                scrollTo("games", 'start')
+
+            if (index === 2)
+                scrollTo("androids", 'start')
+
+            if (index === 3)
+                scrollTo("forms", 'end')
+
+            // if (index === 3)
+            //     window.open('https://vsk.onlinedoctor.ru/lpu/')
+        }
+
+        return <p onClick={handleClick} className='img header__titles-title'>{ item }</p>
     })
+
     return (
-        <div className='header'>
+        <div style={ {background: isMenuClicked ? 'black' : 'rgba(0, 0, 0, 0.58)'} } className='header'>
             <img className='img header__logo' src="/icons/main_logo.png" alt="" />
 
             { windowWidth.current < 930 ? (
-                    <div className='hamburger'>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div onClick={ () => updateMenu() }>
+                        { !isMenuClicked ?
+                            (
+                                <div onClick={ () => updateMenu() } className='hamburger'>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            ) :
+
+                            (
+                                <div className={'hamburger__close'}>
+
+                                </div>
+                            )
+                        }
                     </div>
                 ) :
                 (
@@ -30,7 +93,6 @@ export const Header = () => {
                             text={ 'Скачать' }
                         />
                     </div>
-
                 )
             }
         </div>

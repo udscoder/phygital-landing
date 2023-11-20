@@ -3,7 +3,7 @@ import { Button } from "../../form/Button";
 
 export const Project = () => {
     return (
-        <div className='project'>
+        <div className='project' id='about_us'>
             <img
                 className='project__img'
                 src="/images/project_left.png"

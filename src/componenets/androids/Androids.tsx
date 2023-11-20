@@ -3,7 +3,7 @@ import { Button } from "../../form/Button";
 
 export const Androids = () => {
     return (
-        <div className='androids'>
+        <div className='androids' id={'androids'}>
 
             <div className='androids__content'>
                 <img

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const Games = () => {
     return (
-        <div className='games'>
+        <div className='games' id={'games'}>
             <img
                 className={'games__image'}
                 src="/images/games_1.png" alt="" />

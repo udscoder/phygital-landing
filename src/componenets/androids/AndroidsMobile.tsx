@@ -3,7 +3,7 @@ import { Button } from "../../form/Button";
 
 export const AndroidsMobile = () => {
     return (
-        <div className={'androids'}>
+        <div className={'androids'} id={'androids'}>
             <div className='androids__content'>
                 <img src="/images/androids-mobile-1.png" alt="" />
             </div>

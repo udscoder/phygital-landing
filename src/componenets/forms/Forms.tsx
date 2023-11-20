@@ -26,7 +26,7 @@ export const Forms = () => {
         }
     ])
     return (
-        <div className='forms'>
+        <div className='forms' id={'forms'}>
             <img className='background' src="/images/cover_main_2.png" alt="" />
 
             <div className='forms__block'>
