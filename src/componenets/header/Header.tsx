@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({
     setIsMenuClicked
 }) => {
     const windowWidth: any = useRef(window.innerWidth);
-    const titles = [ 'О нас', 'Игри', 'Андроиди', 'Формы', ]
+    const titles = [ 'О нас', 'Игры', 'Андроиди', 'Формы', ]
 
     const updateMenu = () => {
         if (!isMenuClicked) {

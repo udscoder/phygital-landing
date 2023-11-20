@@ -7,7 +7,7 @@ export const IntroductionMobile = () => {
     const [menuClass, setMenuClass] = useState('menu hidden')
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
-    const titles = [ 'О нас', 'Игри', 'Андроиди', 'Формы']
+    const titles = [ 'О нас', 'Игры', 'Андроиди', 'Формы']
 
     const renderedTitles = titles.map((item: any, index) => {
         const handleClick = () => {
