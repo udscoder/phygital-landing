@@ -26,19 +26,10 @@ export const Header: FC<HeaderProps> = ({
         setIsMenuClicked(!isMenuClicked)
     }
 
-    // useEffect(() => {
-    //     const bodyOverflow = document.body.style.overflow;
-    //
-    //     if (isMenuClicked) {
-    //         document.body.style.overflow = 'hidden'
-    //     }
-    //
-    //     return () => {
-    //         document.body.style.overflow = bodyOverflow;
-    //     }
-    // }, [ isMenuClicked ])
-
-    const renderedTitles = titles.map((item: any, index: number) => {
+    const renderedTitles = titles.map((
+        item: any,
+        index: number
+    ) => {
         const handleClick = () => {
             if (index === 0)
                 scrollTo("about_us", 'center')
@@ -56,8 +47,20 @@ export const Header: FC<HeaderProps> = ({
             //     window.open('https://vsk.onlinedoctor.ru/lpu/')
         }
 
-        return <p onClick={handleClick} className='img header__titles-title'>{ item }</p>
+        return <p onClick={ handleClick } className='img header__titles-title'>{ item }</p>
     })
+
+    useEffect(() => {
+        const bodyOverFlow = document.body.style.overflow
+
+        if (isMenuClicked) {
+            document.body.style.overflow = 'hidden'
+        }
+
+        return () => {
+            document.body.style.overflow = bodyOverFlow
+        }
+    }, [ isMenuClicked ])
 
     return (
         <div style={ {background: isMenuClicked ? 'black' : 'rgba(0, 0, 0, 0.58)'} } className='header'>
@@ -75,7 +78,7 @@ export const Header: FC<HeaderProps> = ({
                             ) :
 
                             (
-                                <div className={'hamburger__close'}>
+                                <div className={ 'hamburger__close' }>
 
                                 </div>
                             )
