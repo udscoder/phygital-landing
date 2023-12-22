@@ -15,6 +15,7 @@ export const Header: FC<HeaderProps> = ({
 }) => {
     const windowWidth: any = useRef(window.innerWidth);
     const titles = [ 'О нас', 'Игры', 'Андроиды', 'Формы', ]
+    const [isActive, setIsActive] = useState('')
 
     const updateMenu = () => {
         if (!isMenuClicked) {
@@ -30,6 +31,7 @@ export const Header: FC<HeaderProps> = ({
         item: any,
         index: number
     ) => {
+        let text;
         const handleClick = () => {
             if (index === 0)
                 scrollTo("about_us", 'center')
@@ -43,11 +45,17 @@ export const Header: FC<HeaderProps> = ({
             if (index === 3)
                 scrollTo("forms", 'end')
 
+            text = item
+
+            setIsActive(item)
             // if (index === 3)
             //     window.open('https://vsk.onlinedoctor.ru/lpu/')
         }
 
-        return <p onClick={ handleClick } className='img header__titles-title'>{ item }</p>
+        console.log("AAA", isActive)
+
+
+        return <p onClick={ handleClick } className={`img header__titles-title ${isActive === item ? 'isActive' : ""}`}>{ item }</p>
     })
 
     useEffect(() => {

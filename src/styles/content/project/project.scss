@@ -13,9 +13,15 @@
         align-items: center;
 
         &-desc {
+            font-family: TT FORS, sans-serif;
             width: 500px;
             height: 330px;
             text-align: center;
+        }
+        &-btn {
+
+            width: 352px;
+            height: 48px;
         }
     }
 

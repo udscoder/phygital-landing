@@ -11,9 +11,15 @@
 @font-face {
     font-family: "FGTL";
     src: url("../fonts/FGTL.otf");
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
-    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Fors";
+    src: url("../../public/fonts/tt/TT Fors Light.ttf");
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
@@ -47,7 +53,7 @@ body {
 .btn{
     font-family: FGTL, sans-serif;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
     border: none;
     padding: 10px 50px;
