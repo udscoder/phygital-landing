@@ -9,7 +9,7 @@ export const Games = () => {
 
             <img
                 className={'games__image-bottom'}
-                src="/images/games_2.png" alt="" />
+                src="/images/games_2.jpg" alt="" />
         </div>
     )
 }
