@@ -52,8 +52,6 @@ export const Header: FC<HeaderProps> = ({
             //     window.open('https://vsk.onlinedoctor.ru/lpu/')
         }
 
-        console.log("AAA", isActive)
-
 
         return <p onClick={ handleClick } className={`img header__titles-title ${isActive === item ? 'isActive' : ""}`}>{ item }</p>
     })
