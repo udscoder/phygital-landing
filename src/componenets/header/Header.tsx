@@ -31,7 +31,6 @@ export const Header: FC<HeaderProps> = ({
         item: any,
         index: number
     ) => {
-        let text;
         const handleClick = () => {
             if (index === 0)
                 scrollTo("about_us", 'center')
@@ -47,8 +46,6 @@ export const Header: FC<HeaderProps> = ({
 
             if (index === 4)
                 scrollTo("forms", 'end')
-
-            text = item
 
             setIsActive(item)
             // if (index === 3)
