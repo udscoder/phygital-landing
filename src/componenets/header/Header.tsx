@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({
     setIsMenuClicked
 }) => {
     const windowWidth: any = useRef(window.innerWidth);
-    const titles = [ 'О нас', 'Игры', 'Андроиды', 'Формы', ]
+    const titles = [ 'О нас', 'Преимущества', 'Как начать', 'Возможности', 'Контакты']
     const [isActive, setIsActive] = useState('')
 
     const updateMenu = () => {
@@ -43,6 +43,9 @@ export const Header: FC<HeaderProps> = ({
                 scrollTo("androids", 'start')
 
             if (index === 3)
+                scrollTo("ios", 'end')
+
+            if (index === 4)
                 scrollTo("forms", 'end')
 
             text = item

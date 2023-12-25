@@ -43,6 +43,10 @@ function App() {
                         <AndroidsMobile />
 
                         <Forms />
+
+                        <div className={'footer__mobile'}>
+                            <p className={'footer__text'}>© 2023 Фиджитал центер</p>
+                        </div>
                     </>
                 ) :
                 (
@@ -56,6 +60,18 @@ function App() {
                         <Androids />
 
                         <Forms />
+
+                        <div className={'footer'}>
+                            <p className={'footer__text'}>© 2023 Фиджитал центер</p>
+
+                            <div className={'footer__right'}>
+                                <p className={'footer__text'}>
+                                    Публичная оферта
+                                </p>
+                                <span className={'footer__dot'}></span>
+                                <p className={'footer__text'}>Пользовательчкое соглашение</p>
+                            </div>
+                        </div>
                     </>
                 ) }
         </div>

@@ -54,9 +54,10 @@ body {
     font-family: FGTL, sans-serif;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
     border: none;
-    padding: 10px 50px;
+    padding: 14px 20px;
     background: linear-gradient(90deg, #467FFF 0%, #A414FF 100.93%);
 }
 
@@ -109,3 +110,41 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .5;
+    padding: 15px 124px;
+    color: #ffffff;
+    background: black;
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__dot {
+        background: white;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+    }
+
+    &__mobile {
+        font-size: 14px;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        justify-content: center;
+    }
+}
+

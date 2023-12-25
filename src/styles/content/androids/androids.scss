@@ -14,6 +14,14 @@
         background: linear-gradient(180deg, rgba(164, 20, 255, 0.00) 0%, rgba(164, 20, 255, 0.17) 14.06%, rgba(164, 20, 255, 0.12) 85.94%, rgba(164, 20, 255, 0.00) 100%);
     }
 
+    &__second {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     &__image {
         width: 1190px;
         background: none;

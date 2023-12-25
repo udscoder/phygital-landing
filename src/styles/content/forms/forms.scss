@@ -1,6 +1,24 @@
 .forms {
     position: relative;
+    height: 100vh;
+    width: 100%;
     color: #ffffff;
+
+    &__socials {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+        }
+    }
+
+    button {
+        margin-top: 40px;
+    }
 
     &__block {
         padding: 30px;
@@ -9,12 +27,12 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 100%;
+        top: 50%;
         left: 50%;
         z-index: 1;
         transform: translate(-50%, -50%);
         background: #191919;
-        margin-top: 500px;
+        //margin-top: 500px;
 
         &-title {
             font-size: 18px;
@@ -45,10 +63,10 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .forms {
-        &__block {
-            top: 220%;
-        }
-    }
-}
+//@media screen and (max-width: 800px) {
+//    .forms {
+//        &__block {
+//            top: 220%;
+//        }
+//    }
+//}

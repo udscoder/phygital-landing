@@ -53,7 +53,15 @@ export const Forms = () => {
 
                 <Button
                     className={'btn forms-btn'}
-                    text={'Отправить'}/>
+                    text={'Отправить'}
+                />
+
+                <div style={{flexDirection: 'row'}} className='forms__socials'>
+                    <img src="/icons/icon_telegram.png" alt="" />
+                    <img src="/icons/icon_instagram.png" alt="" />
+                    <img src="/icons/icon_facebook.png" alt="" />
+                    <img src="/icons/icon_messanger.png" alt="" />
+                </div>
             </div>
         </div>
     )
