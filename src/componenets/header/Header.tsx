@@ -101,7 +101,7 @@ export const Header: FC<HeaderProps> = ({
                         </div>
 
                         <Button
-                            className={ 'btn' }
+                            className={ 'header__btn btn' }
                             text={ 'Скачать' }
                         />
                     </div>

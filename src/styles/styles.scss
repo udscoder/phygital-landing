@@ -51,6 +51,7 @@ body {
 }
 
 .btn{
+    height: 48px;
     font-family: FGTL, sans-serif;
     cursor: pointer;
     font-size: 16px;
@@ -121,6 +122,7 @@ input[type=number] {
     background: black;
 
     &__text {
+        font-family: TT FORS, sans-serif;
         font-size: 14px;
         font-weight: 400;
     }
